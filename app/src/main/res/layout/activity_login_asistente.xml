@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Asistente"
+    android:background="#1191A3">
+
+    <ImageView
+        android:id="@+id/imageViewAsistente"
+        android:layout_width="137dp"
+        android:layout_height="153dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="388dp"
+        android:src="@drawable/asistente" />
+
+    <EditText
+        android:id="@+id/TxtAsistenteUsuario"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="233dp"
+        android:backgroundTint="#2C2929"
+        android:hint="@string/usuario_asistente"
+        android:minHeight="48dp"
+        android:textColor="#001944" />
+
+    <EditText
+        android:id="@+id/TxtAsistenteContraseña"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="312dp"
+        android:hint="@string/contrasena_Asistente"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="#001944"
+        android:backgroundTint="#2C2929"/>
+
+    <Button
+        android:id="@+id/btnIniciarAsistente"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="135dp"
+        android:backgroundTint="#026165"
+        android:onClick="verificarDatos"
+        android:text="@string/inicio_logAsitente"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

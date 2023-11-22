@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".citas">
+
+    <!-- Contenido Principal -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/grupo_citas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Toolbar -->
+            <include layout="@layout/toolbar" />
+
+            <!-- Listado de Citas -->
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="TODO"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="#8115787C"
+                android:text="@string/citas"
+                android:textAlignment="center"
+                android:textColor="@color/menu_1"
+                android:textSize="19sp" />
+
+            <!-- Botón Flotante para Agregar Cita -->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCitas"
+                android:layout_width="381dp"
+                android:layout_height="532dp"
+                android:layout_margin="10dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_cita" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_citas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/teal_700"
+                android:contentDescription="@string/add_cita"
+                android:onClick="@string/add_citas"
+                android:src="@drawable/ic_notas"
+                tools:ignore="ImageContrastCheck,RtlHardcoded,SpeakableTextPresentCheck" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Menú lateral -->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start">
+
+        <include layout="@layout/nav_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

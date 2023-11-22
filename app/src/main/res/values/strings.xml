@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Clinica_dental-G8-FINAL</string>
+    <string name="seleccione_su_rol">Seleccione su usuario:</string>
+    <string name="dentista">DENTISTA</string>
+    <string name="asistente">ASISTENTE</string>
+    <string name="dentista_usuario">USUARIO</string>
+    <string name="contrasena_Dentista">CONTRASEÑA</string>
+    <string name="inicio_logDentista">INGRESAR</string>
+    <string name="text_toolbar">CLINICA DENTAL</string>
+    <string name="ver_citas">CITAS</string>
+    <string name="ver_paciente">PACIENTES</string>
+    <string name="ver_tratamientos">TRATAMIENTOS</string>
+    <string name="ver_chat_asistente">"CHAT ASISTENTE "</string>
+    <string name="ver_configuracion">CONFIGURACION</string>
+    <string name="pulsa_salir">SALIR</string>
+    <string name="usuario_asistente">USUARIO</string>
+    <string name="contrasena_Asistente">CONTRASEÑA</string>
+    <string name="inicio_logAsitente">INGRESAR</string>
+    <string name="ver_bienvenida">Bienvenida Dra.Daniela</string>
+    <string name="ver_actividades">Actividades de Hoy</string>
+    <string name="ingrese_su_nota_aqu">Ingrese su nota aquí</string>
+    <string name="guardar_nota">Guardar Nota</string>
+
+    <string name="Nombre_Paciente">NOMBRE</string>
+    <string name="edad_paciente">EDAD</string>
+    <string name="diagn_stico">DIAGNOSTICO</string>
+    <string name="Ultima_visita">ULTIMA VISITA</string>
+    <string name="pacientes">PACIENTES</string>
+    <string name="agregar_paciente">PACIENTE</string>
+    <string name="pagina_dentista">INICIO</string>
+    <string name="Nombre_Tratamiento">TRATAMIENTO</string>
+    <string name="inicio_tratamiento">FECHA DE INICIO DE TRATAMIENTO</string>
+    <string name="descripcion_tratamiento">DESCRIPCION</string>
+
+    <!-- Strings related to login -->
+    <string name="agregar_pacientes">AGREGAR PACIENTES</string>
+    <string name="apellidos_del_paciente">Apellidos del paciente</string>
+    <string name="n_de_dui">Nª de DUI</string>
+    <string name="nombres_del_paciente">Nombres del paciente</string>
+    <string name="add_pacientes">Agregar paciente</string>
+    <string name="Direccion">Direccion de residencia</string>
+    <string name="Nªdetelefono">Telefono</string>
+    <string name="Fecha_cita">FECHA:dd/MM/yyyy</string>
+    <string name="Hora_cita">HORA:HH:mm </string>
+    <string name="notas_cita">NOTAS DE LA CITA:</string>
+    <string name="agregar_citas_" />
+    <string name="citas">CITAS</string>
+    <string name="todo">TODO</string>
+    <string name="fecha_cita">FECHA:dd/MM/yyyy</string>
+    <string name="hora_cita">HORA:HH:mm</string>
+    <string name="descripcion_cita">DESCRIPCION:</string>
+    <string name="agregar_cita">AGREGAR CITA</string>
+    <string name="add_citas" />
+    <string name="add_cita" />
+
+</resources>

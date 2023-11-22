@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_paciente">
+
+    <include
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="64dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="@string/agregar_pacientes"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- EditText para ingresar el nombre del paciente -->
+        <EditText
+            android:id="@+id/Txt_NombrePaciente"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:hint="@string/nombres_del_paciente"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Txt_ApellidoPaciente"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints=""
+            android:hint="@string/apellidos_del_paciente"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63" />
+
+        <EditText
+            android:id="@+id/Txt_DuiPaciente"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/n_de_dui"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            android:autofillHints="creditCardNumber" />
+
+        <EditText
+            android:id="@+id/Txt_DireccionPaciente"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/Direccion"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            android:autofillHints="postalAddress" />
+
+        <EditText
+            android:id="@+id/Txt_CelPaciente"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/Nªdetelefono"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+            android:autofillHints="phone" />
+
+        <!-- Botón para agregar el paciente -->
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/add_pacientes" />
+    </LinearLayout>
+</RelativeLayout>

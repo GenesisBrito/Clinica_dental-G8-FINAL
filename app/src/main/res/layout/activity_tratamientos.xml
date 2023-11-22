@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tratamientos">
+
+    <!-- Contenido Principal -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/grupo_tratamientos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <!-- Toolbar -->
+            <include layout="@layout/toolbar"/>
+
+            <!-- Listado de Citas -->
+
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="#8115787C"
+                android:text="@string/ver_tratamientos"
+                android:textAlignment="center"
+                android:textColor="@color/menu_1"
+                android:textSize="19sp" />
+
+            <!-- Botón Flotante para Agregar Cita -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lista_tratamientos"
+                android:layout_width="389dp"
+                android:layout_height="553dp"
+                android:layout_margin="10dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:listitem="@layout/item_tratamientos" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/AGENDAR_TRATAMIENTOS"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_tratamientos"
+                app:backgroundTint="@color/menu_1"
+                app:elevation="6dp"
+                app:pressedTranslationZ="12dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Menú lateral -->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start"
+        tools:ignore="VisualLintBounds">
+
+        <include layout="@layout/nav_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
